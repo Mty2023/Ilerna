@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+ul.disc {
+            list-style-type: disc;
+}
+
+ul.circle {
+    list-style-type: circle;
+}
+
+ul.square {
+    list-style-type: square;
+}
+
+ul.none {
+    list-style-type: none;
+}
+

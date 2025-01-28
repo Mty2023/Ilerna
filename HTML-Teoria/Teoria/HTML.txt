@@ -1,0 +1,145 @@
+Al comenzar, escribir un ! y al elegir el primero, ya añade el cuerpo del comienzo de la página web.
+
+https://www.w3schools.com/html/default.asp
+
+https://developer.mozilla.org/es/
+
+https://validator.w3.org/#validate_by_input  (checkea páginas web o códigos HTML)
+
+- Si quiero hacer un XHTML tengo que poner un DTD, para validar que todo está correcto.
+- Los DOCTYPE son "Public", porque son para WEBs públicas.
+
+http://htmlcolorcodes.com
+
+<p>: es un parágrafo. Se abre y cierra uno por parágrafo.
+<div>: es un bloque
+
+<link>: te lleva a un link
+<blank>: abre el link en una página nueva en blanco
+<br />: dentro de un <p> hace un salto de linea
+<img src="imagenleon.jpg" width="300" height="200" alt=Lion> hace llamada a un archivo jpg
+
+HOOVER: pasar por encima con el ratón
+
+Existen 4 estados de un enlace: link, hoover, active y visited (el link a la espera, hoover al pasar por encima de él con el ratón, active al hacer clic, y visited al haber estado visitando el link.
+
+
+DATALIST: Muestra un desplegable de todo lo que comienza por la letra que pongas.
+
+HTML Layouts:  
+Multimedia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Lora', serif; 
+    line-height: 1.5; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+header .company {
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem; 
+    color: #D2691E; 
+}
+
+header .title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+header .time, header .days {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.food {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.food .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.food .description {
+    font-size: 1rem;
+    color: #777; 
+    margin: 0.5rem 0;
+}
+
+.food .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #D2691E; 
+}
+
+.food .price::after {
+    content: " $"; 
+}
+
+.food .calories {
+    font-size: 1.1rem;
+    color: #555; 
+}
+
+.food .calories::before {
+    content: "Calories: ";
+}
+
+footer {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .address,
+footer .tel,
+footer .website {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+}

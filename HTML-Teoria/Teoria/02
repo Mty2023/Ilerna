@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE temps [
+
+<!ELEMENT temps (entitat+)>
+<!ELEMENT entitat (nom, ubicacio, prediccio)>
+<!ATTLIST entitat id ID #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT ubicacio (ciutat, provincia)>
+<!ELEMENT ciutat (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT prediccio (precipitacio, vent)>
+<!ATTLIST prediccio data NMTOKEN #REQUIRED>
+<!ELEMENT predicipitacio (#PCDATA)>
+<!ELEMENT vent (direccio, velocitat)>
+<!ELEMENT direccio (#PCDATA)>
+<!ELEMENT velocitat (#PCDATA)>
+
+]>
+
+
+
+<temps>
+    <entitat id=""AZ000000A>
+    <nom>Agencia ST</nom>
+    <ubicacio>
+<ciutat>Sant Boi</ciutat>    
+<provincia>Barcelona</provincia>
+    
+    
+    </ubicacio>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </entitat>"
+
+</temps>

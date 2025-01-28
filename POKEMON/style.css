@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+/*
+He elegido estos colores de https://cssgradient.io/
+background: rgb(231,175,64);
+background: radial-gradient(circle, rgba(231,175,64,0.9360119047619048) 22%, rgba(190,115,39,1) 55%, rgba(190,115,39,1) 69%);
+para la parte de la tarjeta donde se aloja el Pokemon
+*/
+
+/*
+He elegido estos colores de https://cssgradient.io/
+background: rgb(205,203,201);
+background: radial-gradient(circle, rgba(205,203,201,1) 14%, rgba(237,234,228,0.9360119047619048) 45%, rgba(205,203,201,1) 79%);
+para la parte de la tarjeta donde se alojan los datos del Pokemon
+*/
+
+
+body {
+    margin: 2px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+#poke-container {
+    display:grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+ 
+}
+
+ /*Parte gris de la tarjeta
+ */
+#pokeImage {
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(231,175,64);
+    background: radial-gradient(circle, rgba(231,175,64,0.9360119047619048) 22%, rgba(190,115,39,1) 55%, rgba(190,115,39,1) 69%);
+}
+    
+
+
+#poke-container >div {
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e6e0f8, #fdf5d0); 
+    text-align:left;
+
+}
+
+
+/* Título centrado, con el box negro y las letras en blanco 
+*/
+
+h2 {
+    background-color: #000000;  
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Gabarito";
+
+}
+
+#pokeContent {
+
+    background: rgb(205,203,201);
+    background: radial-gradient(circle, rgba(205,203,201,1) 14%, rgba(237,234,228,0.9360119047619048) 45%, rgba(205,203,201,1) 79%);
+    font-size: 25px;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-align:left;
+
+}
+
+
+/* para dispositivos de hasta 600px
+*/
+
+@media screen and (max-width: 600px) {
+    #poke-container {
+        grid-template-columns: 1fr;
+    }
+ 
+}
+
+/* para dispositivos de entre 601px hasta 800px
+*/
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    #poke-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+}
+
+/* para dispositivos de 801px
+*/
+
+@media screen and (min-width: 801px) {
+    #poke-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  
+}
+
+/* para dispositivos de entre 801px hasta 1200px
+*/
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    #poke-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ 
+}
+
+
+
+h4 { 
+
+text-transform: capitalize;
+font-size: 24px;
+
+}
+
+
+#pokeNumber::before {
+    content: "Code: ";
+    font-weight: bold;
+
+}
+
+#pokeHeight::before {
+    content: "Type: ";
+    font-weight: bold;
+
+}
+
+#pokeWeight::before {
+    content: "Weight: ";
+    font-weight: bold;
+
+}
+
+
+#pokeHeight::before {
+
+    content: "Height: ";
+    font-weight: bold;
+}
+
+
+#poke-container img {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto 10px;
+    display: block;
+ 
+}
+
+
+/* Vamos a poner la coma, para enumerar los valores en el Type
+*/
+
+ul::before {
+    content: "Type: ";
+    font-weight: bold;
+    text-align:left;
+}
+
+
+ul li::after {
+    content: ", ";
+    font-weight: bold;
+    text-align:left;
+}
+
+
+li {
+    list-style: none;
+    display: inline;
+  }
+
+
+  ul li:last-child::after {
+    content: "";
+  }
+
+ul li::before {
+    display: inline;
+}
+
+

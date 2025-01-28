@@ -1,0 +1,16 @@
+<?php
+$importe=60;
+$descuento=0;
+if ($importe>100) {
+    $descuento=$importe*0.2;
+}
+
+if ($importe 50 & 100) {
+    $descuento=$importe*0.1;
+}
+
+$importe=$importe-$descuento;
+?>
+
+
+

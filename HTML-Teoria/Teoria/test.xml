@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <agenda>
+    <entrada>
+        <nom>
+            Pepe
+        </nom>
+        <telefon>
+            675888888
+        </telefon>
+    </entrada>
+
+
+    <entrada>
+        <nom>
+            Pepe
+        </nom>
+        <telefon>
+            93243933
+        </telefon>
+    </entrada>
+
+
+      <entrada>
+        <nom>
+            Anna
+        </nom>
+        <telefon>
+            609245676
+        </telefon>
+    </entrada>
+  
+  </agenda>
+  
+     
+</root>

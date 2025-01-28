@@ -1,0 +1,46 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hachi+Maru+Pop&family=Protest+Revolution&display=swap');
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hachi+Maru+Pop&family=Protest+Revolution&display=swap');
+
+
+*{
+text-align: center;
+display: block;
+font-family: "Tangerine";
+font-size: 30px;
+}
+
+header > company {
+        font-family: "Tangerine", cursive;
+        font-size: 3rem; 
+        color: #16bd69;
+}
+
+header > title {
+        font-family: "Hachi", cursive;
+        font-size: 3rem; 
+        color: #D2691E;
+}
+
+header > time {
+    font-family: "Tangerine", cursive;
+    font-size: 3rem; 
+    color: #acc4a3;
+}
+
+header > days {
+    font-family: "Tangerine", cursive;
+    font-size: 3rem; 
+    color: #D2691E;
+}
+
+header > description {
+    font-family: "Hachi", cursive;
+    font-size: larger ;
+    color: blueviolet;
+}

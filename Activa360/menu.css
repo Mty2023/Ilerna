@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #f06292; /* Rosa */
+    --secondary-color: #fff; /* Blanco */
+    --font-family: sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+
+
+/* para dispositivos de hasta 600px
+*/
+
+@media screen and (max-width: 600px) {
+    #hero img {
+        grid-template-columns: 1fr;
+    }
+ 
+}
+
+/* para dispositivos de entre 601px hasta 800px
+*/
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    #hero img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+}
+
+/* para dispositivos de 801px
+*/
+
+@media screen and (min-width: 801px) {
+    #hero img {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  
+}
+
+/* para dispositivos de entre 801px hasta 1200px
+*/
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    #hero img {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ 
+}
